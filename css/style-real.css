@@ -35,9 +35,9 @@ h2{
 }
 
 section{
-	margin: 0% 10% 5%;
-	width: 80%;
-	display: inline-block;
+	margin: auto;
+	width: 60%;
+	display: block;
 }
 
 p{
@@ -135,23 +135,25 @@ animation-iteration-count: infinite;
 }
 
 #menu{
-	margin-top: 5%;
+	display: block;
+	margin: 7% auto 0px;
 }
 
-#one, #two, #logpop{
-	margin: 0% 2%;
-	padding: 1%;
+#two, #logpop{
+	margin: 0% 8%;
+	padding: 3% 7%;
 	text-decoration: none;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	text-transform: uppercase;
     color: white;
-    font-weight: 900;
-	float: right;
-	background: rgba(35,32,18, 0.8);
+    font-weight: 700;
+	font-size: 150%;
+	background: rgba(0,0,0, 0.8);
 	border: none;
+	border-radius: 10px;
 }
-#one:hover, #two:hover, #logpop:hover{
-    color: rgb(35,32,18);
+#two:hover, #logpop:hover{
+    color: black;
 	background: rgba(255,255,255, 0.8);
 	cursor: pointer;
 }
@@ -176,15 +178,17 @@ animation-iteration-count: infinite;
 
 /*Section parting*/
 .sectionParting{
-	margin:auto 0.5%;
+	width: 90%;
+	margin: auto;
 	padding: 1%;
-	border: 5px solid rgba(35,32,18, 0.6);
+	border: 5px solid rgba(0,0,0, 0.5);
 	position: relative;
 	z-index: 10;
+	border-radius: 10px;
 }
 
 .sectionParting:after{
-	background-color: rgba(255,255,255, 0.9);
+	background-color: rgba(255,255,255, 0.8);
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
@@ -193,19 +197,7 @@ animation-iteration-count: infinite;
 	content: '';
 	position: absolute;
 	display: block;
-}
-
-#sec_one_1{
-	width: 60%;
-}
-
-#sec_one_2{
-	width: 32%;
-}
-
-#sec_two_1{
-	width: 65%;
-	margin: auto;
+	border-radius: 6px;
 }
 
 /*Login pop settings*/
@@ -217,7 +209,8 @@ animation-iteration-count: infinite;
 	left: 42%;
 	top: 30%;
 	padding: 1%;
-	border: 5px solid rgba(35,32,18, 0.6);
+	border: 5px solid rgba(0,0,0, 0.6);
+	border-radius: 10px;
 }
 
 #sec_logpop:after{
@@ -230,6 +223,7 @@ animation-iteration-count: infinite;
 	content: '';
 	position: absolute;
 	display: block;
+	border-radius: 6px;
 }
 
 #sec_logpop a{
@@ -243,14 +237,14 @@ animation-iteration-count: infinite;
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	background-color: rgba(35,32,18, 0.7);
+	background-color: rgba(0,0,0, 0.7);
 	z-index: 20;
 }
 
 /*** FOOTER ***/
 footer{
 	margin: 0% 3% 0% 0%;
-	width: 80%;
+	width: 30%;
 	bottom:0px;
 	right: 0px;
 	position: fixed;
