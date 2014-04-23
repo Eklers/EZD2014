@@ -29,23 +29,23 @@ function openmenu(id) {
 }
 
 function logpop() {
-	if(document.getElementById('logpop_overlay').style.display == 'block'){
-			document.getElementById('sec_logpop').style.display = 'none';
-			document.getElementById('logpop_overlay').style.display = 'none';
+	if(document.getElementById('pop_overlay').style.display == 'block'){
+			document.getElementById('sec_pop').style.display = 'none';
+			document.getElementById('pop_overlay').style.display = 'none';
 	}
 	else{
-		document.getElementById('sec_logpop').style.display = 'inline';
-		document.getElementById('logpop_overlay').style.display = 'block';
+		document.getElementById('sec_pop').style.display = 'inline';
+		document.getElementById('pop_overlay').style.display = 'block';
 	}
 }
 
 function regpop() {
-	if(document.getElementById('logpop_overlay').style.display == 'block'){
-			document.getElementById('sec_logpop').style.display = 'none';
-			document.getElementById('logpop_overlay').style.display = 'none';
+	if(document.getElementById('pop_overlay').style.display == 'block'){
+			document.getElementById('sec_pop').style.display = 'none';
+			document.getElementById('pop_overlay').style.display = 'none';
 	}
 	else{
-		document.getElementById('logpop_overlay').style.display = 'block';
+		document.getElementById('pop_overlay').style.display = 'block';
 	}
 }
 
