@@ -4,70 +4,48 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>EZD</title>
-	<link rel="stylesheet" href="css/style-real.css"> <!-- basic css -->
-	<script type="text/javascript" src="js/js.js"></script> <!-- page navigation functions -->
+	<link rel="stylesheet" href="css/style-base.css"> <!-- css -->
+<!--	<link rel="stylesheet" href="css/style-real.css"> <!-- css -->
+	<link rel="stylesheet" href="css/style-excercise.css"> <!-- css -->
+	<script type="text/javascript" src="js/raphaeljs.js"></script> <!-- main rainbow function -->
 	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> <!-- Library -->
+	<script type="text/javascript" src="js/raphael-library.js"></script> <!-- Raphael library -->
+	<script type="text/javascript" src="js/easeljs-0.5.0.min.js"></script> <!-- Createrjs Easeljs library -->
+    <script type="text/javascript" src="js/onloadjs.js"></script> <!-- Window.onload function -->
 </head>
 
 <body>
 
 <nav id="navigator">
 	<div id="logo" >
-		<a onclick="openmenu('one');return false;"> <img src="./img/logo.png" alt="logo"/></a>
+		<img src="./img/logo.png" alt="logo"/>
 		<p id="keepCalmText" class="rightFloat"> Keep calm</br> and do excercise</p>
 	</div>
 	
 	<div id="menu">
-		<a href="#two" id="two" onclick="openmenu('two');return false;">Spied mani!</a>
-		<a id="logpop" onclick="logpop();return false;">Lietotāj, uzspied man ar kursoru...</a>	
+		<a id="one">Viena poga</a>
+		<a id="two">Otra poga</a>
+		<a id="three">Trešā poga</a>
 	</div>
 </nav>
 
 <section>
 
-	<div  id="sec_one">
-		 <div id="sec_one_1" class="sectionParting">
-			<a href="http://www.datoriki.lv"> <img src="./img/datoriki.png" alt="datoriki"/></a>
+	<div  id="sec_one" class="sectionParting">
+		<div id="THISISRAINBOW">
+			<button id="norainbow" type="button" onclick="rainbow()">Make a rainbow!</button>
+			<button id="unicornrun" type="button" disabled>Run, Unicorn, run!</button>
+			<div id="rainbow" class="raphaelbigdiv"></div>
 		</div>
-		 
 	</div>
 
-	<div  id="sec_two" class="hide">
-		 <div id="sec_two_1" class="sectionParting">
-			<p>CSS ir neatņemama tīmekļa lapas izstrādes sastāvdaļa. Ar to var paveikt daudz...</p>
-			
-			<table>
-			<tr>
-				<td rowspan="2">
-					<div class="cube">
-						<div class="topFace">
-							<div> Content</div>
-						</div>
-						<div class="leftFace"> Content</div>
-						<div class="rightFace"> Content</div>
-					</div>
-				</td>
-				<td><div id="JediMove">Hover mouse over</div></td>
-			</tr>
-			<tr>
-				<td><div id="RainbowsEverywhere">Look! I can change color!</div></td>
-			</tr>
-			</table>
-		</div>
-		 
-	</div>
 </section>
 
 <footer>
-	Ļoti svarīgs teksts <span class="spanline">|</span> Cepums <span class="spanline">|</span> Banāns <span class="spanline">|</span> HOP!
+	Ļoti svarīgs teksts <span class="spanline">|</span> Cepums un Banāns <span class="spanline">|</span> HOP!
 </footer>
+
 </body>
-
-<div  id="sec_pop" class="hide">		
-	<p> Labi, bet nesauc mani par lietotāju...</p>
-</div>
-
-<div id="pop_overlay" class="hide" onclick="logpop();return false;"></div>
 
 <div id="copyright">
 	<table>

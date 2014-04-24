@@ -18,7 +18,7 @@ src: url('../css/amorphica.ttf');
 
 section{
 	margin: auto;
-	width: 60%;
+	width: 90%; /* 1 */
 	display: block;
 }
 
@@ -29,12 +29,13 @@ p{
 
 /*Background*/
 body{
-background-color: #AEB0C4;
+background-image: url('../img/duck.png'); /* 2 */
+background-color: #EE468F; /* 3 */
 }
 
 /*Navigation*/
 #navigator{
-	margin: 0px auto;
+	margin: 0px; /* 4 */
 	width:60%;
 	margin-bottom: 3%;
 }
@@ -49,7 +50,7 @@ background-color: #AEB0C4;
 	padding: 3% 4%;
 	text-decoration: none;
 	font-family: 'Alegreya Sans SC', sans-serif;
-	text-transform: uppercase;
+	text-transform: capitalize; /* 5 */
     color: white;
     font-weight: 700;
 	font-size: 150%;
@@ -59,8 +60,8 @@ background-color: #AEB0C4;
 }
 #one:hover, #two:hover, #three:hover{
     color: black;
-	background: rgba(255,255,255, 0.8);
-	cursor: pointer;
+	background: rgba(239,159,169, 0.8); /* 6 */
+	cursor: wait; /* 7 */
 }
 
 #logo{
@@ -74,8 +75,8 @@ background-color: #AEB0C4;
 }
 
 #keepCalmText{
-	font-family: keepCalm;
-	font-size: 300%;
+	font-family: amorphica; /* 8 */
+	font-size: 200%; /* 9 */
 	margin: 5% 7%;
 	text-align:center;
 	
@@ -90,7 +91,7 @@ background-color: #AEB0C4;
 	border: 5px solid rgba(0,0,0, 0.5);
 	position: relative;
 	z-index: 10;
-	border-radius: 10px;
+	/* 10 - Border radius 10px */
 }
 
 .sectionParting:after{
